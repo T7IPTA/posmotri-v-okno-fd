@@ -66,7 +66,7 @@ video {
 
 .result__video-container {
   position: relative;
-  inline-size: 711px;
+  inline-size: 700px;
   margin: 0 0 11px;
 }
 
@@ -103,7 +103,7 @@ video {
   font-size: 18px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline 1px #FFF;
   text-underline-offset: 5px;
 }
@@ -219,15 +219,10 @@ video {
   position: relative;
   overflow-y: scroll;
   block-size: 298px;
-  scrollbar-width: none;
 }
 
 .content__accent {
   color: #545050;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -266,6 +261,9 @@ video {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
+  text-overflow: ellipsis;  
+  white-space: nowrap;   
+  overflow: hidden;
   line-height: 1;
   text-transform: uppercase;
   hyphens: auto;
@@ -289,4 +287,3 @@ video {
   font-weight: 400;
   line-height: 16.2px;
 }
-
