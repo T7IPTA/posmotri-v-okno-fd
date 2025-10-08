@@ -67,7 +67,7 @@ video {
 .result__video-container {
   position: relative;
   inline-size: 700px;
-  margin: 0 0 11px;
+  margin: 0 0 40px;
 }
 
 .result__video {
@@ -266,7 +266,8 @@ video {
   overflow: hidden;
   line-height: 1;
   text-transform: uppercase;
-  hyphens: auto;
+  max-inline-size: 200px;
+  inline-size: 100%;
 }
 
 .content__video-card {
