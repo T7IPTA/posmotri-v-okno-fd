@@ -62,6 +62,7 @@ video {
 
 .result {
   align-self: flex-end;
+  inline-size: 711px;
 }
 
 .result__video-container {
