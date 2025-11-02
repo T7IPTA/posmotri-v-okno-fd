@@ -56,6 +56,7 @@ video {
 .content {
   display: flex;
   gap: 30px;
+  align-items: end;
   margin: 0 30px;
   inline-size: 100%;
 }
@@ -67,7 +68,7 @@ video {
 
 .result__video-container {
   position: relative;
-  inline-size: 700px;
+  inline-size: 711px;
   block-size: 386px;
   margin: 0 0 40px;
 }
@@ -75,7 +76,6 @@ video {
 .result__video {
   inline-size: 100%;
   block-size: 100%;
-  position: absolute;
   object-fit: cover;
   object-position: center;
 }
@@ -83,8 +83,8 @@ video {
 .search-form {
   display: flex; 
   align-items: center;
-  margin-bottom: 10px;
   gap: 40px;
+  align-self: flex-start
 }
 
 .search-form__fieldset {
@@ -98,7 +98,6 @@ video {
 .search-form__label {
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
   gap: 5px;
   cursor: pointer;
 }
@@ -180,7 +179,6 @@ video {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 80px;
   background-color: transparent;
   cursor: pointer;
   inline-size: 100%;
@@ -209,6 +207,7 @@ video {
 
 .content__details {
   inline-size: 100%;
+  max-inline-size: 400px; 
 }
 
 .title {
@@ -223,8 +222,7 @@ video {
 
 .content__list {
   position: relative;
-  overflow-y: scroll;
-  block-size: 298px;
+  overflow: auto;
 }
 
 .content__accent {
@@ -232,7 +230,7 @@ video {
 }
 
 .content__list-item:not(:last-child) {
-  margin: 0 0 34px;
+  margin: 0 0 30px;
 }
 
 .content__card-link {
@@ -272,12 +270,7 @@ video {
   overflow: hidden;
   line-height: 1;
   text-transform: uppercase;
-  max-inline-size: 200px;
-}
-
-.content__details {
-  max-inline-size: 400px; 
-  inline-size: 100%;
+  max-inline-size: 186px;
 }
 
 .content__video-card {
@@ -301,5 +294,6 @@ video {
 
 .content__list-container {
 position: relative;
-
+block-size: 298px;
+overflow: auto;
 }
